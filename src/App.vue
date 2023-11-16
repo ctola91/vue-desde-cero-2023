@@ -4,12 +4,21 @@ import HelloWorld from './components/HelloWorld.vue'
 import SingleFile from './components/single-file.vue';
 import ReactivityFile from './components/reactivity-file.vue';
 import ConditionalTest from './components/conditional-test.vue';
+import RenderList from './components/render-list.vue';
+import ComputedSample from './components/computed-sample.vue';
+import EventHandling from './components/event-handling.vue';
+import WatchersSample from './components/watchers-sample.vue';
+
 </script>
 
 <template>
   <!-- <SingleFile /> -->
   <!-- <ReactivityFile /> -->
-  <ConditionalTest />
+  <!-- <ConditionalTest /> -->
+  <!-- <RenderList /> -->
+  <!-- <ComputedSample /> -->
+  <!-- <EventHandling /> -->
+  <WatchersSample />
 </template>
 
 <style scoped>
