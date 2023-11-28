@@ -12,41 +12,8 @@ import ProductList from '@/components/products/ProductList.vue'
 import type { Product } from '@/interfaces/Product'
 import { computed, provide, ref } from 'vue';
 
-const products: Product[] = [
-  {
-    id: 1,
-    name: "Curso de Vue.js desde cero",
-    price: 20,
-    isAvailable: true
-  },
-  {
-    id: 2,
-    name: "Curso de React.js desde cero",
-    price: 20,
-    isAvailable: true
-  },
-  {
-    id: 3,
-    name: "Curso de Angular desde cero",
-    price: 20,
-    isAvailable: false
-  },
-  {
-    id: 4,
-    name: "Curso de HTML desde cero",
-    price: 20,
-    isAvailable: false
-  },
-]
-
 const cart = ref<Product[]>([])
 provide('cart', cart)
-
-const onAddToCart = (product: Product) => {
-  console.log(product)
-  cart.value.push(product)
-}
-
 </script>
 
 <template>
@@ -59,7 +26,8 @@ const onAddToCart = (product: Product) => {
     <!-- <ComputedSample /> -->
     <!-- <EventHandling /> -->
     <!-- <WatchersSample /> -->
-    <ProductList :products="products" @add-to-cart="onAddToCart" />
+    <!-- <ProductList :products="products" @add-to-cart="onAddToCart" /> -->
+    <RouterView></RouterView>
   </div>
 </template>
 
@@ -145,4 +113,5 @@ button.disabled {
   .product-list {
     flex-direction: row;
   }
-}</style>
+}
+</style>
