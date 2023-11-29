@@ -22,13 +22,13 @@ const products: Product[] = [
     id: 3,
     name: "Curso de Angular desde cero",
     price: 20,
-    isAvailable: false
+    isAvailable: true
   },
   {
     id: 4,
     name: "Curso de HTML desde cero",
     price: 20,
-    isAvailable: false
+    isAvailable: true
   },
 ]
 
