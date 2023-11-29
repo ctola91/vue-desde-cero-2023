@@ -1,34 +1,124 @@
-@import './base.css';
-
-#app {
-  max-width: 1280px;
-  margin: 0 auto;
-
-  font-weight: normal;
+.c-slate-700 {
+  color: #334155;
+}
+.bg-neutral-100 {
+  background-color: #f3f4f6;
 }
 
-a,
-.green {
+.bg-emerald-700 {
+  background-color: #047857;
+}
+
+.shadow-md {
+  box-shadow:
+    0 4px 6px -1px rgb(0 0 0 / 0.1),
+    0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+body {
+  margin: 0;
+}
+.bg-app {
+  min-height: 100vh;
+}
+.app-header {
+  background: #1f2937;
+  color: #fff;
+}
+.app-header li,
+.app-header a {
+  color: #fff;
   text-decoration: none;
-  color: hsla(160, 100%, 37%, 1);
-  transition: 0.4s;
+  padding: 15px 20px;
+}
+.app-header a:hover {
+  color: #1f2937;
+  background: #fff;
+}
+.cart-link {
+  position: relative;
+}
+.cart-link span {
+  background-color: #b91c1c;
+  padding: 0 5px;
+  border-radius: 18px;
+  position: absolute;
+  transform: translate(-10px, -9px);
+}
+.flex {
+  display: flex;
+}
+.flex-column {
+  flex-direction: column;
+}
+.flex-row {
+  flex-direction: row;
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
+.align-center {
+  align-items: center;
+}
+.justify-center {
+  justify-content: center;
+}
+.justify-space-between {
+  justify-content: space-between;
+}
+.gap-xs {
+  gap: 4px;
+}
+.gap-s {
+  gap: 8px;
+}
+.gap-m {
+  gap: 12px;
+}
+.menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.product-list {
+  flex-direction: column;
+  gap: 16px;
+}
+.product-list-item {
+  padding: 12px;
+  border: solid 1px #eee;
+  border-radius: 8px;
+  background-color: #ffffff;
 }
 
-@media (hover: hover) {
-  a:hover {
-    background-color: hsla(160, 100%, 37%, 0.2);
-  }
+button {
+  padding: 10px;
+  border: solid 1px #eee;
+  border-radius: 8px;
+  background: #03a9f4;
+  color: #fff;
+  display: block;
+  width: 100%;
 }
 
-@media (min-width: 1024px) {
-  body {
-    display: flex;
-    place-items: center;
-  }
+button.disabled {
+  background: #eee;
+}
 
-  #app {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0 2rem;
+.w-100 {
+  width: 100%;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.product-price {
+  font-size: 1.5rem;
+  text-align: end;
+  padding: 0 20px;
+}
+@media (min-width: 680px) {
+  .product-list {
+    flex-direction: row;
   }
 }

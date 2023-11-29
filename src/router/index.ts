@@ -7,8 +7,7 @@ import UserProfile from '@/components/users/views/UserProfile.vue'
 import UserPosts from '@/components/users/views/UserPosts.vue'
 
 const router = createRouter({
-  history: createWebHashHistory(),
-  // history: createWebHistory(import.meta.env.BASE_URL),
+  history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     {
       path: '/',
